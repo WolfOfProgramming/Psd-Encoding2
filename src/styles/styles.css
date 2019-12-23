@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600|Open+Sans:300,400&display=swap');
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    padding: 0 20%;
+}
+
+.button {
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.4em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.general-header {
+    font-size: 3em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}

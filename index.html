@@ -477,7 +477,7 @@
                         name=""
                         id=""
                         cols="30"
-                        rows="10"
+                        rows="7"
                         class="form__textarea"
                         placeholder="Messege"
                     ></textarea>
@@ -490,10 +490,12 @@
                     <ul class="information__list">
                         <li class="information__item">
                             <svg
+                                class="information__svg"
                                 style="width:24px;height:24px"
                                 viewBox="0 0 24 24"
                             >
                                 <path
+                                class="information__path"
                                     fill="#000000"
                                     d="M12,2L4.5,20.29L5.21,21L12,18L18.79,21L19.5,20.29L12,2Z"
                                 />
@@ -504,10 +506,12 @@
                         </li>
                         <li class="information__item">
                             <svg
+                                class="information__svg"
                                 style="width:24px;height:24px"
                                 viewBox="0 0 24 24"
                             >
                                 <path
+                                class="information__path"
                                     fill="#000000"
                                     d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
                                 />
@@ -518,10 +522,12 @@
                         </li>
                         <li class="information__item">
                             <svg
+                                class="information__svg"
                                 style="width:24px;height:24px"
                                 viewBox="0 0 24 24"
                             >
                                 <path
+                                class="information__path"
                                     fill="#000000"
                                     d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"
                                 />
@@ -532,22 +538,82 @@
                 </div>
             </div>
             <ul class="footer__navbar">
-                <li class="navbar__list">
-                    <ul class="">
-                        <li class=""></li>
-                        <li class=""></li>
-                        <li class=""></li>
-                        <li class=""></li>
+                <li class="navbar__item">
+                    <ul class="navbar__list">
+                        <li class="navbar__icon">
+                            <svg
+                                class="navbar__svg"
+                                style="width:24px;height:24px"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    class="navbar__path"
+                                    fill="#000000"
+                                    d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"
+                                />
+                            </svg>
+                        </li>
+                        <li class="navbar__icon">
+                            <svg
+                                class="navbar__svg"
+                                style="width:24px;height:24px"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    class="navbar__path"
+                                    fill="#000000"
+                                    d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"
+                                />
+                            </svg>
+                        </li>
+                        <li class="navbar__icon">
+                            <svg
+                                class="navbar__svg"
+                                style="width:24px;height:24px"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    class="navbar__path"
+                                    fill="#000000"
+                                    d="M17.71,9.33C18.19,8.93 18.75,8.45 19,7.92C18.59,8.13 18.1,8.26 17.56,8.33C18.06,7.97 18.47,7.5 18.68,6.86C18.16,7.14 17.63,7.38 16.97,7.5C15.42,5.63 11.71,7.15 12.37,9.95C9.76,9.79 8.17,8.61 6.85,7.16C6.1,8.38 6.75,10.23 7.64,10.74C7.18,10.71 6.83,10.57 6.5,10.41C6.54,11.95 7.39,12.69 8.58,13.09C8.22,13.16 7.82,13.18 7.44,13.12C7.81,14.19 8.58,14.86 9.9,15C9,15.76 7.34,16.29 6,16.08C7.15,16.81 8.46,17.39 10.28,17.31C14.69,17.11 17.64,13.95 17.71,9.33M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z"
+                                />
+                            </svg>
+                        </li>
+                        <li class="navbar__icon">
+                            <svg
+                                class="navbar__svg"
+                                style="width:24px;height:24px"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    class="navbar__path"
+                                    fill="#000000"
+                                    d="M13,11V13.5H18.87C18.26,17 15.5,19.5 12,19.5A7.5,7.5 0 0,1 4.5,12A7.5,7.5 0 0,1 12,4.5C14.09,4.5 15.9,5.39 17.16,6.84L18.93,5.06C17.24,3.18 14.83,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22C17.5,22 21.5,17.5 21.5,12V11H13Z"
+                                />
+                            </svg>
+                        </li>
                     </ul>
                 </li>
 
-                <li class="navbar__logo">
-                    <img src="" alt="" class="" />
+                <li class="navbar__item">
+                    <svg
+                        class="navbar__svg"
+                        style="width:24px;height:24px"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            class="navbar__path"
+                            fill="#000000"
+                            d="M3,13A9,9 0 0,0 12,22A9,9 0 0,0 3,13M5.44,15.44C7.35,16.15 8.85,17.65 9.56,19.56C7.65,18.85 6.15,17.35 5.44,15.44M12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,22M14.42,19.57C15.11,17.64 16.64,16.11 18.57,15.42C17.86,17.34 16.34,18.86 14.42,19.57M12,14A6,6 0 0,0 18,8V3C17.26,3 16.53,3.12 15.84,3.39C15.29,3.62 14.8,3.96 14.39,4.39L12,2L9.61,4.39C9.2,3.96 8.71,3.62 8.16,3.39C7.47,3.12 6.74,3 6,3V8A6,6 0 0,0 12,14M8,5.61L9.57,7.26L12,4.83L14.43,7.26L16,5.61V8A4,4 0 0,1 12,12A4,4 0 0,1 8,8V5.61Z"
+                        />
+                    </svg>
                 </li>
 
-                <li class="navbar__rights">
-                    <p class="">
-                        <span class=""></span>
+                <li class="navbar__item">
+                    <p class="navbar__right">
+                        Lorem, ipsum
+                        <span class="navbar__span"> dolor</span>
+                        sit amet.
                     </p>
                 </li>
             </ul>

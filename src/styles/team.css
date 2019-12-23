@@ -1,0 +1,148 @@
+.team {
+    background: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.team__header {
+    color: #fefefe;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.team__header::after {
+    content: '';
+    position: absolute;
+    left: 48%;
+    right: 48%;
+    bottom: -20px;
+    border-bottom: 1px solid #8c8271;
+}
+
+.carousel__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel__item {
+    width: calc(100% / 3);
+    display: block;
+    flex-shrink: 0;
+    padding: 1em;
+    transition: 500ms 100ms ease-in-out;
+}
+
+.carousel__image {
+    object-fit: cover;
+    height: 480px;
+    width: 100%;
+}
+
+.carousel__header {
+    text-align: center;
+    color: #ffffff;
+}
+
+.carousel__header::after {
+    content: 'Something';
+    display: block;
+    text-align: center;
+}
+
+.team__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__dot,
+.team__button {
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #ffffff;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.team__button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__button::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    border-radius: 50%;
+    border: 1px solid #49484d;
+}
+
+.team__button:hover::before {
+    border: 1px solid #f19e36;
+}
+
+.button__svg {
+    margin: auto;
+}
+
+.button__path {
+    fill: #fefefe;
+}
+
+.team__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.team__dot {
+    width: 20px;
+    height: 20px;
+}
+
+.team__dot--active {
+    border: 2px solid #f19e36;
+}
+
+.team__dot:not(:last-child)::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    background: #515055;
+    border-radius: 50%;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.team__dot:not(:first-child)::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    background: #515055;
+    border-radius: 50%;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}

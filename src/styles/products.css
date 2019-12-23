@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.products {
+    background: url('../images/beautyFlower.jpg');
+    height: 800px;
+    background-size: cover;
+    padding: 2em;
+}
+
+.products__header {
+    color: #2f200d;
+    font-size: 3em;
+    position: relative;
+    margin-bottom: 20px;
+}
+.products__header::after {
+    content: '';
+    position: absolute;
+    left: 48%;
+    right: 48%;
+    bottom: -20px;
+    border-bottom: 1px solid #8c8271;
+}
+
+.header__svg {
+    width: 40px !important;
+    height: 40px !important;
+    display: block;
+    margin: 10px auto;
+}
+
+.header__path {
+    fill: #f19e36;
+}
+
+.products__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products__wrapper {
+    background-color: transparent;
+    position: relative;
+    padding: 50px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: 300ms 100ms ease-in;
+    border-radius: 5%;
+}
+
+.products__wrapper::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    border: 1px solid #57606f;
+    border-radius: 20%;
+    opacity: 0;
+    transition: 1000ms 100ms ease-in;
+}
+
+.products__svg-wrapper {
+    position: relative;
+}
+
+.products__svg-wrapper::after {
+    content: 'Roses';
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    font-size: 2em;
+    color: #ffffff;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.products__svg {
+    display: block;
+    background: #34313a;
+    width: 200px !important;
+    height: 290px !important;
+    border-radius: 25%;
+    position: relative;
+}
+
+.products__path {
+    fill: #ffffff !important;
+}
+
+.products__paragraph {
+    opacity: 0;
+    padding: 10px;
+    width: 200px;
+    font-size: 0.9em;
+    color: #34313a;
+    text-align: center;
+    transition: 300ms 100ms ease-in-out;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.35;
+}
+
+.products__paragraph::before {
+    content: '';
+    display: block;
+    height: auto;
+    border-top: 1px solid #57606f;
+    margin: 30px 0;
+}
+
+.products__wrapper:hover,
+.products__wrapper:focus {
+    background-color: #e3d9c7;
+    box-shadow: 0 0 10px #2f3542;
+}
+
+.products__wrapper:hover .products__paragraph,
+.products__wrapper:focus .products__paragraph,
+.products__wrapper:hover::before,
+.products__wrapper:focus::before {
+    opacity: 1;
+}
